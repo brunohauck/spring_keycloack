@@ -70,7 +70,6 @@ public class EmployeeController {
                 .orElseThrow(() -> new ResourceNotFoundException("Note", "id", employeeId));
 
         employeeRepository.delete(employee);
-
         return ResponseEntity.ok().build();
     }
 
